@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>liar</title>
+	<link rel="icon" href="./assets/favicon.ico" />
+	<link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+
+<body onresize="resize()" onload="main()">
+<canvas id="canvas-background"></canvas>
+<script src="./assets/scripts/cursor.js"></script>
+<script src="./assets/scripts/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<video loop preload="auto" class="vidoverlay" id="video">
+	<source src="./assets/overlay.mp4" type="video/mp4">
+</video>
+
+<audio loop preload="auto" id="audio">
+	<source src="./assets/song.mp3" type="audio/mpeg">
+</audio>
+
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+	<label for="overlay-toggle" onclick="videoPlay(); audioPlay(); ">
+		<span class="overlayno-hover hover white" style="font-family: monospace; font-size: 0.6em;">click</span>
+		<span class="overlayhover hover white" style="font-family: monospace; font-size: 0.6em;">click</span>
+	</label>
+</div>
+
+<div id="center" align="center">
+	<span>
+		<p class="hover graffiti" style="font-size: 200px">liar</a>
+		<p class="hover">
+			<a href="https://discord.com/invite/liar" target="_blank" class="hover chungus">discord</a> |
+			<a href="https://t.me/lusts" target="_blank" class="hover chungus">telegram</a> |
+			<a href="https://www.tiktok.com/@gag" target="_blank" class="hover chungus">tiktok</a> |
+			<a href="https://www.youtube.com/@awh" target="_blank" class="hover chungus">youtube</a>
+		</p>
+	</span>
+</div>
+</html>
